@@ -136,6 +136,19 @@ section {
 
     /*Вступна секція*/
 .hero {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/background-img/hero-Img.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: #2F303A;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -194,6 +207,20 @@ section {
 }
 .about-container-link {
     width: 270px;
+}
+.about-container-link::before {
+    display: block;
+    content: "";
+    height: 120px;
+    /*background-image: /*url(../images/background-img/antenna\ 1.png) url(../images/Rectangle\ 3.png)
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;*/
+
+
+
+    outline: 1px solid red;
+    
 }
 .caption {
     font-weight: 700;
