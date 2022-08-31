@@ -112,6 +112,10 @@ section {
     padding-top: 32px;
     padding-bottom: 32px;
 }
+.link::before {
+    content: "";
+
+}
 
 
     /*Контакти хедера*/
