@@ -112,10 +112,6 @@ section {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.link::before {
-    content: "";
-
-}
 
 
     /*Контакти хедера*/
@@ -125,7 +121,6 @@ section {
     margin-left: auto;
     
 }
-
 .contact-links .link {
     text-decoration: none;
     font-weight: 500;
@@ -137,6 +132,18 @@ section {
 .contact-links .link:focus {
     color: var(--accent-txt-color);
 }
+.link-letter {
+    display: flex;
+    gap: 10px;
+}
+.link-phone {
+    display: flex;
+    gap: 10px;
+}
+
+/*.link-letter .link-phone {
+    gap: 10px;
+}*/
 
     /*Вступна секція*/
 .hero {
@@ -200,7 +207,7 @@ section {
     height: 1px;
     overflow: hidden;
     border: 0;
-     padding: 0;
+    padding: 0;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
     margin: -1px;
@@ -212,19 +219,15 @@ section {
 .about-container-link {
     width: 270px;
 }
-.about-container-link::before {
-    display: block;
-    content: "";
+
+.box-antenna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
     height: 120px;
-    /*background-image: /*url(../images/background-img/antenna\ 1.png) url(../images/Rectangle\ 3.png)
-    background-size: 70px 70px;
-    background-repeat: no-repeat;
-    background-position: center;*/
-
-
-
-    outline: 1px solid red;
-    
+    margin-bottom: 30px;
+    background-color: #F5F4FA;
 }
 .caption {
     font-weight: 700;
