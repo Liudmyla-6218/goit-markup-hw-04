@@ -417,6 +417,12 @@ section {
 .contact-link:focus {
     color: var(--accent-txt-color);
 }
+.footer {
+    display: flex;
+    max-width: 1600px;
+    height: 252px;
+}
+
 .footer-title {
     font-weight: 700;
     text-transform: uppercase;
@@ -432,6 +438,8 @@ section {
 .footer-links {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer-link {
     display: flex;
