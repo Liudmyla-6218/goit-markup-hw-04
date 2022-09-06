@@ -360,19 +360,24 @@ section {
 .client-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: #AFB1B8 solid 1px;
     border-radius: 4px;
 }
-
-.client-link:hover,
-.client-link:focus {
-    /*color: var(--accent-txt-color);*/
-    border-color: var(--accent-txt-color);
-}
 .icon-client {
     fill: #AFB1B8;
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: var(--accent-txt-color);
+    color: var(--accent-txt-color);
+}
+
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
+    fill: currentColor;
 }
 
    /*Футер*/
@@ -380,14 +385,16 @@ section {
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 1600px;
+    height: 252px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .footer-container {
     display: flex;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    align-items: baseline;
-    gap: 70;
 }
 
 .logo-footer {
@@ -427,6 +434,10 @@ section {
     color: var(--accent-txt-color);
 }
 
+.footer-container {
+    align-items: baseline;
+   
+}
 
 .footer-title {
     font-weight: 700;
@@ -438,11 +449,11 @@ section {
 }
 .footer-list {
     display: flex;
+    gap: 10px;
 }
 .footer-links {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 678px;
     flex-direction: column;
     gap: 20px;
 }
@@ -453,7 +464,13 @@ section {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
     color: var(--light-txt-color);
+    /*outline: red solid 1px;*/
+}
+.footer-link:hover,
+.footer-link:focus {
+    background-color: var(--accent-txt-color);
 }
 .footer-icon {
     fill: currentColor;
@@ -509,6 +526,11 @@ a {
 }
 .main-link {
     flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.main-link:hover,
+.main-link:focus {
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
 .main-item {
