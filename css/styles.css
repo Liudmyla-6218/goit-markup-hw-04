@@ -11,8 +11,10 @@
     --secondary-font: Raleway, sans-serif;
     /*Основні кольори тексту*/
     --main-txt-color: #212121;
+    --secondary-txt-color: #757575;
     --accent-txt-color: #2196F3;
     --light-txt-color: #FFFFFF;
+    --bg-color: #2F303A;
 }
 
 body {
@@ -56,7 +58,7 @@ section {
    /*outline: red solid 1px;*/
 }
 .page-header {
-    background-color: #FFFFFF;
+    background-color: var(--light-txt-color);
 }
 .site-nav-links {
     display: flex;
@@ -102,9 +104,7 @@ section {
 .site-nav-links .link:focus {
     color: var(--accent-txt-color);
 }
-.site-nav-links .link .current {
-    color: var(--accent-txt-color);
-}
+
 .link {
     display: block;
     padding-top: 32px;
@@ -127,7 +127,7 @@ section {
     font-weight: 500;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--secondary-txt-color);
 }
 .link:hover,
 .link:focus {
@@ -152,7 +152,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #2F303A;
+    background-color: var(--bg-color);
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -174,7 +174,7 @@ section {
     margin-bottom: 30px;
 }
 .btn {
-    background: #2196F3;
+    background: var(--accent-txt-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
@@ -263,7 +263,7 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
-    color: #757575;
+    color:var(--secondary-txt-color);
 }
 .about-box {
     padding-top: 0;
@@ -296,7 +296,7 @@ section {
     margin-top: 50px;
 }
 .team-item {
-    background:#FFFFFF;
+    background: var(--light-txt-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -316,7 +316,7 @@ section {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
-    color: #757575;
+    color:var(--secondary-txt-color);
     margin-bottom: 16px;
 }
 .social-links {
@@ -332,14 +332,12 @@ section {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    color: #AFB1B8;
-}
-.social-icon {
     fill: #AFB1B8;
 }
+
 .social-link:hover .social-icon,
 .social-link:focus .social-icon {
-    fill: #FFFFFF;
+    fill: var(--light-txt-color);
 }
 .social-link:hover,
 .social-link:focus {
@@ -382,20 +380,19 @@ section {
 
    /*Футер*/
 .footer {
-    background: #2F303A;
+    background: var(--bg-color);
     padding-top: 60px;
     padding-bottom: 60px;
-    max-width: 1600px;
-    height: 252px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .footer-container {
     display: flex;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
+    align-items: baseline;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
 
 .logo-footer {
     color: var(--light-txt-color);
@@ -433,10 +430,8 @@ section {
 .contact-link:focus {
     color: var(--accent-txt-color);
 }
-
-.footer-container {
-    align-items: baseline;
-   
+.footer-adress {
+    margin-right: 70px;
 }
 
 .footer-title {
@@ -453,7 +448,6 @@ section {
 }
 .footer-links {
     display: flex;
-    margin-right: 678px;
     flex-direction: column;
     gap: 20px;
 }
@@ -480,7 +474,7 @@ section {
 
 
 .header {
-    background: #FFFFFF;
+    background: var(--light-txt-color);
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -512,7 +506,7 @@ section {
 .section-btn:hover,
 .section-btn:focus {
     color: var(--light-txt-color);
-    background-color: #2196F3;
+    background-color:var(--accent-txt-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 }
@@ -525,7 +519,7 @@ a {
     gap: 30px;
 }
 .main-link {
-    flex-basis: calc((100% - 30px * 2) / 3);
+    display: block;
 }
 
 .main-link:hover,
@@ -534,7 +528,11 @@ a {
 }
 
 .main-item {
-    background: #FFFFFF;
+    flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.main-photo {
+    background:var(--light-txt-color);
 }
 .man-link-text {
     padding: 20px 24px 20px 24px;
@@ -564,5 +562,5 @@ a {
     font-weight: 400;
     font-size: 16px;
     line-height: calc(30 / 16);
-    color: #757575;
+    color: var(--secondary-txt-color);
 }
